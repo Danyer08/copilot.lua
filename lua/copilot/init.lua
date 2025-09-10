@@ -6,11 +6,11 @@ local config = require("copilot.config")
 
 M.setup = function(opts)
   if vim.fn.has("nvim-0.11") == 0 then
-    vim.notify_once(
-      "[copilot.lua] Neovim 0.11+ will soon be required. "
-        .. "Please upgrade your Neovim version if you wish to keep using this plugin.",
-      vim.log.levels.WARN
-    )
+    -- vim.notify_once(
+    --   "[copilot.lua] Neovim 0.11+ will soon be required. "
+    --     .. "Please upgrade your Neovim version if you wish to keep using this plugin.",
+    --   vim.log.levels.WARN
+    -- )
     return
   end
 
